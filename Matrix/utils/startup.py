@@ -25,7 +25,7 @@ from telethon import Button, functions, types, utils
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.contacts import UnblockRequest
 
-from zelz import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+from Matrix import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
 from ..Config import Config
 from ..core.logger import logging
@@ -41,7 +41,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("zelz")
+LOGS = logging.getLogger("Matrix")
 cmdhr = Config.COMMAND_HAND_LER
 Zed_Vip = (1895219306, 6269975462, 6550930943, 5993018048, 5809896714, 1985225531, 6886550001, 925972505, 6038435721, 5746412340, 1762269116, 6272130846, 1052790413, 6055956182, 5059075331, 6669333713, 6328317500, 5616315677, 6227985448, 232499688, 6608224162, 1719023510, 6748495865, 6612882807, 6093001360, 6470835326)
 Zed_Dev = (1895219306, 925972505, 5746412340, 5003461173, 6227985448, 2095357462, 5176749470, 5426390871, 6269975462, 1985225531, 6550930943, 5003461173, 6227985448, 6269975462, 5746412340, 1850533212, 5616315677, 6470835326, 232499688, 6227985448, 1719023510 , 6801349110, 5280339206)
@@ -166,7 +166,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_file("@BotFather", "zelz/zilzal/logozed.jpg")
+            await bot.send_file("@BotFather", "Matrix/logoBiLaL/logozed.jpg")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setabouttext")
             await asyncio.sleep(1)
@@ -270,8 +270,8 @@ async def load_plugins(folder, extfolder=None):
         path = f"{extfolder}/*.py"
         plugin_path = extfolder
     else:
-        path = f"zelz/{folder}/*.py"
-        plugin_path = f"zelz/{folder}"
+        path = f"Matrix/{folder}/*.py"
+        plugin_path = f"Matrix/{folder}"
     files = glob.glob(path)
     files.sort()
     success = 0
@@ -393,7 +393,7 @@ async def verifyLoggerGroup():
         flag = True
     if flag:
         executable = sys.executable.replace(" ", "\\ ")
-        args = [executable, "-m", "zelz"]
+        args = [executable, "-m", "Matrix"]
         os.execle(executable, *args, os.environ)
         sys.exit(0)
 
@@ -424,4 +424,4 @@ async def install_externalrepo(repo, branch, cfolder):
         )
     if os.path.exists(rpath):
         await runcmd(f"pip3 install --no-cache-dir -r {rpath}")
-    await load_plugins(folder="zelz", extfolder=cfolder)
+    await load_plugins(folder="Matrix", extfolder=cfolder)
