@@ -23,7 +23,7 @@ def plug_checker(plugin):
     command=("نصب", plugin_category),
     info={
         "header": "لـ تنصيب ملفـات اضافيـه.",
-        "الوصـف": "بالـرد ع اي ملف (يدعم سورس زدثــون) لـ تنصيبه في بوتك.",
+        "الوصـف": "بالـرد ع اي ملف (يدعم سورس ماتركس) لـ تنصيبه في بوتك.",
         "الاستخـدام": "{tr}نصب بالــرد ع ملـف",
     },
 )
@@ -31,7 +31,7 @@ async def install(event):
     "لـ تنصيب ملفـات اضافيـه."
     zelzal = event.sender_id
     if zelzal not in Zed_Dev:
-        return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
+        return await edit_delete(event, "**- عذرًا .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     if event.reply_to_msg_id:
         try:
             downloaded_file_name = await event.client.download_media(
@@ -68,7 +68,7 @@ async def install(event):
     },
 )
 async def load(event):
-    "لـ تحميـل اي ملف مجـدداً .. اذا كنت قد الغيت تحميله مسبقـاً"
+    "لـ تحميـل اي ملف مجددًا .. اذا كنت قد الغيت تحميله مسبقـاً"
     zelzal = event.sender_id
     if zelzal not in Zed_Dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
