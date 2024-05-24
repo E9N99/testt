@@ -24,7 +24,7 @@ bot = zedub
 StartTime = time.time()
 zedversion = "3.3.2"
 
-if Config.UPSTREAM_REPO == "zel":
+if Config.UPSTREAM_REPO == "E9N99":
     UPSTREAM_REPO_URL = "https://github.com/E9N99/testt"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
