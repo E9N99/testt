@@ -1,6 +1,6 @@
 import sys, asyncio
-import zelz
-from zelz import BOTLOG_CHATID, HEROKU_APP, PM_LOGGER_GROUP_ID
+import Matrix
+from Matrix import BOTLOG_CHATID, HEROKU_APP, PM_LOGGER_GROUP_ID
 from telethon import functions
 from .Config import Config
 from .core.logger import logging
@@ -8,7 +8,7 @@ from .core.session import zedub
 from .utils import mybot, autoname, autovars, saves
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 
-LOGS = logging.getLogger("Zelzal")
+LOGS = logging.getLogger("Matrix")
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
