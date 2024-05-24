@@ -9,11 +9,11 @@ from telethon import Button, types
 from telethon.events import CallbackQuery
 from telethon.utils import get_attributes
 
-from zelz import zedub
-from zelz.Config import Config
-from zelz.core.decorators import check_owner
-from zelz.helpers import humanbytes, progress
-from zelz.helpers.utils import _zedutils
+from Matrix import zedub
+from Matrix.Config import Config
+from Matrix.core.decorators import check_owner
+from Matrix.helpers import humanbytes, progress
+from Matrix.helpers.utils import _zedutils
 
 CC = []
 PATH = []  # using list method for some reason
