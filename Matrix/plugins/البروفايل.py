@@ -201,7 +201,7 @@ async def remove_profilepic(delpfp):
 @zedub.zed_cmd(pattern="انشائي$")
 async def _(event):
     result = await event.client(GetAdminedPublicChannelsRequest())
-    output_str = "**⎉╎جميع القنوات والمجموعات التي قمت بأنشائها :**\n"
+    output_str = "**⎉╎جميع القنوات والمجموعات التي قمت بإنشائهـا :**\n"
     output_str += "".join(
         f" - {channel_obj.title} @{channel_obj.username} \n"
         for channel_obj in result.chats
