@@ -64,9 +64,9 @@ async def zedgban(event):  # sourcery no-metrics
     if user.id == zedub.uid:
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ نفسـي **")
     if user.id in zel_dev:
-        return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ احـد المطـورين عـام **")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
-        return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ مطـور السـورس عـام **")
+        return await edit_delete(zede, "**⎉╎عذرًا ..لا استطيـع حظـࢪ احـد المطـورين عـام **")
+    if user.id == 925972505 or user.id == 1488114134 or user.id == 20357462:
+        return await edit_delete(zede, "**⎉╎عذرًا ..لا استطيـع حظـࢪ مطـور السـورس عـام **")
 
 
     if gban_sql.is_gbanned(user.id):
@@ -79,7 +79,7 @@ async def zedgban(event):  # sourcery no-metrics
     count = 0
     sandy = len(san)
     if sandy == 0:
-        return await edit_delete(zede, "**⎉╎عــذراً .. يجـب ان تكــون مشـرفـاً فـي مجموعـة واحـده ع الأقــل **")
+        return await edit_delete(zede, "**⎉╎عــذراً .. يجـب أن تكــون مشرفًا فـي مجموعـة واحـده ع الأقــل **")
     await zede.edit(
         f"**⎉╎جـاري بـدء حظـر ↠** [{user.first_name}](tg://user?id={user.id}) **\n\n**⎉╎مـن ↠ {len(san)} كــروب**"
     )
