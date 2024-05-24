@@ -12,7 +12,7 @@ from . import zedub
 from ..core.managers import edit_or_reply
 from ..helpers.utils import reply_id as rd 
 from ..helpers import get_user_from_event
-from zedthon.malath.theem import *
+from BiLaL.malath.theem import *
 
 from . import *
 
