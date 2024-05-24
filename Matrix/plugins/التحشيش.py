@@ -13,8 +13,8 @@ from ..helpers import reply_id, get_user_from_event
 from . import BOTLOG, BOTLOG_CHATID
 plugin_category = "الادوات"
 LOGS = logging.getLogger(__name__)
-zed_dev = (5426390871, 5176749470, 2095357462)
-zel_dev = (925972505, 1895219306, 6269975462, 1985225531)
+zed_dev = (1488114134, 517679470, 209537462)
+zel_dev = (1488114134, 189521306, 626997562, 198225531)
 
 async def ge(user, event):
     if isinstance(user, str):
@@ -28,11 +28,11 @@ async def ge(user, event):
 ########################  ZThon Userbot ~ By: Zelzal (@zzzzl1l)  ########################
 @zedub.zed_cmd(pattern="رابط الحذف")
 async def _(zed):
-    await edit_or_reply (zed, "𓆰 [𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿 - 𝘿𝙀𝙇𝙀𝙏𝙀](t.me/ZThon) 🗑♻️𓆪\n**𓍹━─━─━─━─𝙕𝞝𝘿─━─━─━─━𓍻**\n\n **✵│رابـط الحـذف ↬** https://telegram.org/deactivate \n\n\n **✵│بـوت الحـذف¹  ↬** @LC6BOT\n**✵│بـوت الحـذف²  ↬** @DTeLebot")
+    await edit_or_reply (zed, "𓆰 [᥉᥆ᥙᖇᥴᥱ ꪔᥲƚᖇᎥꪎ  - 𝘿𝙀𝙇𝙀𝙏𝙀](t.me/veevvw) 🗑♻️𓆪\n**𓍹━─━─━─━─ ꪔᥲƚᖇᎥꪎ─━─━─━─━𓍻**\n\n **✵│رابـط الحـذف ↬** https://telegram.org/deactivate \n\n\n **✵│بـوت الحـذف¹  ↬** @LC6BOT\n**✵│بـوت الحـذف²  ↬** @DTeLebot")
 ########################  ZThon Userbot ~ By: Zelzal (@zzzzl1l)  ########################
 @zedub.zed_cmd(pattern="بوت الحذف")
 async def _(zed):
-    await edit_or_reply (zed, "𓆰 [𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿 - 𝘿𝙀𝙇𝙀𝙏𝙀](t.me/ZThon) 🗑♻️𓆪\n**𓍹━─━─━─━─𝙕𝞝𝘿─━─━─━─━𓍻**\n\n **✵│رابـط الحـذف ↬** https://telegram.org/deactivate \n\n\n **✵│بـوت الحـذف¹  ↬** @LC6BOT\n**✵│بـوت الحـذف²  ↬** @DTeLebot")
+    await edit_or_reply (zed, "𓆰 [᥉᥆ᥙᖇᥴᥱ ꪔᥲƚᖇᎥꪎ - 𝘿𝙀𝙇𝙀𝙏𝙀](t.me/veevvw) 🗑♻️𓆪\n**𓍹━─━─━─━─𝙕𝞝𝘿─━─━─━─━𓍻**\n\n **✵│رابـط الحـذف ↬** https://telegram.org/deactivate \n\n\n **✵│بـوت الحـذف¹  ↬** @LC6BOT\n**✵│بـوت الحـذف²  ↬** @DTeLebot")
 ########################  ZThon Userbot ~ By: Zelzal (@zzzzl1l)  ########################
 @zedub.zed_cmd(pattern="رفع جلب(?: |$)(.*)")
 async def permalink(malath):
@@ -40,9 +40,9 @@ async def permalink(malath):
     if not user:
         return
     if user.id in zed_dev:
-        return await edit_or_reply(malath, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة المطـورين  ❏╰**")
+        return await edit_or_reply(malath, f"**╮ ❐ عذرًا .. لا يمكننـي إهانة المطـورين  ❏╰**")
     if user.id in zel_dev:
-        return await edit_or_reply(malath, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة مطـور السـورس  ❏╰**")
+        return await edit_or_reply(malath, f"**╮ ❐ عذرًا .. لا يمكننـي إهانـة مطـور السـورس  ❏╰**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         malath,
@@ -55,9 +55,9 @@ async def permalink(malath):
     if not user:
         return
     if user.id in zed_dev:
-        return await edit_or_reply(malath, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة المطـورين  ❏╰**")
+        return await edit_or_reply(malath, f"**╮ ❐ عذرًا... لا يمكننـي إهانة المطـورين  ❏╰**")
     if user.id in zel_dev:
-        return await edit_or_reply(malath, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة مطـور السـورس  ❏╰**")
+        return await edit_or_reply(malath, f"**╮ ❐ عذرًا .. لا يمكننـي إهانة مطـور السـورس  ❏╰**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         malath,
